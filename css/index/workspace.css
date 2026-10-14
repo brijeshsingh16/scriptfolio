@@ -1,0 +1,414 @@
+/* Workspace styles for the Practice view.
+   Loaded AFTER landing-page.css. Everything is scoped under #practiceView
+   so it cannot clash with the landing page styles. */
+
+:root {
+  --nav-h: 69px;            /* real value is measured by index.js */
+  --sidebar-width: 310px;
+}
+
+/* ---------- View switching ---------- */
+.view { display: none; }
+.view.active { display: block; flex: 1; }
+
+#homeView [id] { scroll-margin-top: calc(var(--nav-h) + 8px); }
+
+/* Practice mode: page does not scroll, workspace fills the space below the navbar */
+body.practice-mode {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#practiceView.active {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--nav-h));
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Active link in the shared navbar */
+.nav-link.active {
+  color: var(--sage-accent);
+  box-shadow: 0 2px 0 var(--sage-accent);
+  padding-bottom: 4px;
+}
+
+/* Extra hero button */
+.btn-outline-sage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-accent);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.btn-outline-sage:hover {
+  background-color: var(--sage-light);
+  border-color: var(--sage-accent);
+  color: var(--sage-accent);
+}
+.hero-cta-group { gap: 12px; flex-wrap: wrap; }
+
+/* ---------- Workspace layout ---------- */
+#practiceView .workspace {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- Sidebar ---------- */
+#practiceView .sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-header);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 90;
+  transition: transform 0.25s ease;
+}
+
+#practiceView .sidebar-header {
+  padding: 14px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-card-alt);
+  flex-shrink: 0;
+}
+
+#practiceView .practice-counter-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+#practiceView .badge-pill {
+  background-color: var(--sage-accent);
+  color: var(--bg-card);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+#practiceView .sidebar-content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-accent) var(--bg-header);
+}
+
+#practiceView .practice-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Pinned Computer Notes card */
+#practiceView .pinned-portal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+#practiceView .pinned-portal-card:hover { border-color: var(--border-accent); background-color: var(--bg-card-alt); }
+#practiceView .pinned-portal-card.active { border-color: var(--sage-accent); background-color: var(--sage-light); }
+
+#practiceView .portal-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+
+#practiceView .portal-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background-color: var(--sage-accent);
+  color: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+#practiceView .portal-meta { min-width: 0; }
+#practiceView .portal-meta h2 { font-size: 13px; font-weight: 800; color: var(--text-primary); line-height: 1.2; }
+#practiceView .portal-meta p {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#practiceView .portal-link-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--bg-card-alt);
+  border: 1px solid var(--border-color);
+  color: var(--sage-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+#practiceView .portal-link-btn:hover { background-color: var(--sage-accent); color: var(--bg-card); }
+
+#practiceView .sidebar-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+#practiceView .sidebar-divider::before,
+#practiceView .sidebar-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+/* Topic groups */
+#practiceView .topic-group {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+  transition: border-color 0.15s ease;
+}
+#practiceView .topic-group:hover { border-color: var(--border-accent); }
+
+#practiceView .topic-title {
+  padding: 10px 14px;
+  background-color: var(--bg-card-alt);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+}
+#practiceView .topic-title:hover { background-color: var(--bg-hover); }
+
+#practiceView .topic-title-left { display: flex; align-items: center; gap: 8px; }
+#practiceView .topic-title-left i.topic-icon { color: var(--sage-accent); font-size: 15px; width: 16px; text-align: center; }
+#practiceView .topic-title-right { display: flex; align-items: center; gap: 6px; }
+
+#practiceView .subtopic-count-tag {
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--bg-input);
+  color: var(--text-secondary);
+  padding: 2px 6px;
+  border-radius: 9999px;
+}
+
+#practiceView .topic-toggle-icon { font-size: 10px; color: var(--text-muted); transition: transform 0.2s ease; }
+#practiceView .topic-group.collapsed .topic-toggle-icon { transform: rotate(-90deg); }
+#practiceView .topic-group.collapsed .subtopic-nav { display: none; }
+#practiceView .topic-group.collapsed .topic-title { border-bottom: none; }
+
+#practiceView .subtopic-nav {
+  list-style: none;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#practiceView .subtopic-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  gap: 6px;
+}
+#practiceView .subtopic-link:hover { background-color: var(--bg-hover); color: var(--text-primary); }
+#practiceView .subtopic-link.active {
+  background-color: var(--sage-accent);
+  color: var(--bg-card);
+  font-weight: 700;
+  border-color: var(--sage-accent-dark);
+}
+
+/* ---------- Right side: top bar + iframe ---------- */
+#practiceView .main-viewport {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  background-color: var(--bg-body);
+}
+
+#practiceView .viewport-top-bar {
+  padding: 12px 20px;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+#practiceView .breadcrumb-trail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#practiceView .breadcrumb-trail .active-language { color: var(--text-primary); font-weight: 700; }
+#practiceView .breadcrumb-trail .active-subtopic { color: var(--sage-accent); font-weight: 800; }
+
+#practiceView .page-source-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-card-alt);
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+#practiceView .open-external-btn { color: var(--sage-accent); text-decoration: none; font-size: 11px; font-weight: 700; }
+#practiceView .open-external-btn:hover { text-decoration: underline; }
+
+#practiceView .iframe-wrapper {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  background-color: var(--bg-body);
+}
+#practiceView #externalPageFrame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  background-color: var(--bg-body);
+}
+
+/* ---------- Mobile ---------- */
+#practiceView .ws-mobile-bar { display: none; }
+#practiceView .sidebar-overlay { display: none; }
+
+@media (max-width: 820px) {
+  #practiceView .ws-mobile-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+  }
+
+  #practiceView .ws-toggle-btn {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  #practiceView .ws-mobile-current {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--sage-accent);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #practiceView .sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--nav-h);
+    bottom: 0;
+    height: auto;
+    transform: translateX(-100%);
+  }
+  #practiceView .sidebar.open { transform: translateX(0); }
+
+  #practiceView .sidebar-overlay.active {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: var(--nav-h);
+    background: rgba(43, 38, 33, 0.45);
+    z-index: 85;
+  }
+
+  #practiceView .viewport-top-bar { padding: 10px 14px; }
+  #practiceView .page-source-pill span { display: none; }
+}

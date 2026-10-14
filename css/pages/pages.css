@@ -1,0 +1,348 @@
+/* Warm Earthy Theme: NO pure white (#fff) and NO pitch black (#000) */
+    :root {
+      --bg-body: #f2ece1;
+      --bg-card: #faf4e8;
+      --bg-card-alt: #f4ecdf;
+      --bg-header: #ebe2d3;
+      --bg-code-box: #e9decb;
+      --border-color: #dfd3c0;
+      --border-accent: #ccbea8;
+      --text-primary: #332e29;
+      --text-secondary: #5f574d;
+      --text-muted: #82776a;
+      --sage-accent: #446852;
+      --sage-accent-dark: #32503e;
+      --sage-light: #dde7df;
+      --terracotta: #b86242;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --shadow-sm: 0 2px 6px rgba(51, 46, 41, 0.05);
+      --shadow-md: 0 6px 18px rgba(51, 46, 41, 0.08);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-body);
+      color: var(--text-primary);
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-body);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-accent);
+      border-radius: 9999px;
+    }
+
+    /* Page Header */
+    .page-header {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-info h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-info p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--bg-header);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--sage-accent);
+    }
+
+    /* Questions Feed */
+    .questions-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .qa-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .qa-card:hover {
+      border-color: var(--border-accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* TOP SECTION: Question & Copy Button */
+    .question-section {
+      padding: 20px;
+      border-bottom: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+    }
+
+    .question-meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+
+    .question-pill-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .question-num {
+      background-color: var(--sage-accent);
+      color: var(--bg-card);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 9999px;
+      letter-spacing: 0.5px;
+    }
+
+    .topic-tag {
+      background-color: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 9999px;
+    }
+
+    /* Copy Button */
+    .copy-btn {
+      background-color: var(--bg-card-alt);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .copy-btn:hover {
+      background-color: var(--sage-accent);
+      color: var(--bg-card);
+      border-color: var(--sage-accent-dark);
+    }
+
+    .copy-btn.copied {
+      background-color: var(--sage-accent);
+      color: var(--bg-card);
+      border-color: var(--sage-accent);
+    }
+
+    .question-heading {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .question-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* BOTTOM SECTION: Code Solution Image Container */
+    .solution-section {
+      background-color: var(--bg-card-alt);
+      padding: 18px 20px 20px 20px;
+    }
+
+    .solution-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .solution-title {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--sage-accent);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .image-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .image-container {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-code-box);
+      box-shadow: inset 0 0 10px rgba(51, 46, 41, 0.04);
+      cursor: zoom-in;
+    }
+
+    /* Responsive Image */
+    .solution-image {
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .image-container:hover .solution-image {
+      transform: scale(1.006);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(43, 38, 33, 0.85);
+      backdrop-filter: blur(4px);
+      z-index: 999;
+      padding: 24px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 95vw;
+      max-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 85vh;
+      border-radius: 10px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 34px;
+      height: 34px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      color: var(--text-primary);
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--sage-accent);
+      color: var(--bg-card);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 14px;
+      }
+      .page-header {
+        padding: 16px;
+      }
+      .question-section, .solution-section {
+        padding: 14px;
+      }
+    }
