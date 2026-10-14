@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3D6C7BB8M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D3D6C7BB8M');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriptFolio — Programming Solutions & Computer Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="images/icon/logo.png">
+
+  <!-- Existing landing page styles (moved here) + new workspace styles -->
+  <link rel="stylesheet" href="css/index/landing-page.css">
+  <link rel="stylesheet" href="css/index/workspace.css">
+</head>
+<body id="top">
+
+  <!-- ONE NAVBAR FOR THE WHOLE SITE -->
+  <header class="landing-nav">
+    <div class="nav-container">
+      <a href="#top" class="brand-link" title="Scroll to top">
+        <div class="brand-logo-box" title="ScriptFolio">
+          <img src="images/icon/logo.png" alt="S" onerror="this.remove()">
+        </div>
+        <div class="brand-text">
+          <h1>ScriptFolio</h1>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#top" class="nav-link" data-nav="home">Home</a></li>
+        <li><a href="#notes-portal" class="nav-link">Computer Notes</a></li>
+        <li><a href="#methodology" class="nav-link">Learn & Solve</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#practice" class="nav-link" data-nav="practice">Practice</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        onclick="toggleMobileMenu()"
+        aria-label="Toggle Navigation Menu"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileMenu()"></div>
+
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-top">
+        <a href="#top" class="drawer-brand" onclick="closeMobileMenu()" style="text-decoration: none;">
+          <div class="brand-logo-box" style="width: 34px; height: 34px; min-width: 34px; min-height: 34px; font-size: 18px;">
+            <img src="images/icon/logo.png" alt="S" onerror="this.remove()">
+          </div>
+          <span>ScriptFolio</span>
+        </a>
+        <button type="button" class="drawer-close-btn" onclick="closeMobileMenu()" aria-label="Close Navigation">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="drawer-links">
+        <li>
+          <a href="#top" class="drawer-link" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#notes-portal" class="drawer-link" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Computer Notes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#methodology" class="drawer-link" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-route"></i>
+            <span>Learn & Solve</span>
+          </a>
+        </li>
+        <li>
+          <a href="#features" class="drawer-link" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span>Features</span>
+          </a>
+        </li>
+        <li>
+          <a href="#practice" class="drawer-link" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-folder-tree"></i>
+            <span>Practice</span>
+          </a>
+        </li>
+        <li style="margin-top: 8px;">
+          <a
+            href="https://notes-computer.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-portal"
+            style="width: 100%;"
+            onclick="closeMobileMenu()"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>Open Notes Portal ↗</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-text">
+        Curated by <strong>Brijesh Singh</strong>
+      </div>
+      <div class="drawer-socials">
+        <a href="https://github.com/brijeshsingh16" target="_blank" rel="noopener noreferrer" class="drawer-social-btn">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/bsingh16" target="_blank" rel="noopener noreferrer" class="drawer-social-btn">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===================== VIEW 1: HOME (landing page) ===================== -->
+  <div class="view view-home active" id="homeView">
+
+    <section class="hero-section">
+      <div class="hero-pill">
+        <i class="fa-solid fa-terminal"></i>
+        <span>Learn to Code by Solving Real Problems & Notes</span>
+      </div>
+
+      <h2 class="hero-title">
+        Master Programming with <span class="highlight">Direct Problem Solutions</span> & Complete Notes.
+      </h2>
+
+      <p class="hero-desc">
+        Stop getting stuck on dry syntax. ScriptFolio gives you structured questions with verified code screenshot solutions,
+        one-click prompt copying for your IDE, and comprehensive computer science revision notes curated by <strong>Brijesh Singh</strong>.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#practice" class="btn btn-portal">
+          <i class="fa-solid fa-folder-tree"></i>
+          <span>Start Practicing</span>
+        </a>
+        <a href="https://notes-computer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sage">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span>Read Computer Notes</span>
+        </a>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">180+</div>
+          <div class="stat-label">Coding Problems</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="statTopics">17</div>
+          <div class="stat-label">Practice Topics</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Verified Visual Solutions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portal-banner-wrap" id="notes-portal">
+      <div class="portal-banner">
+        <div class="portal-banner-left">
+          <div class="portal-banner-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="portal-banner-text">
+            <h3>
+              <span>Computer Notes & Revision Portal</span>
+              <span class="portal-tag">Theory & Syllabus</span>
+            </h3>
+            <p>
+              Complete computer science theory, syllabus outlines, and quick revision guides hosted on Vercel.
+              Designed to accompany your programming practice for exams, interviews, and class revision.
+            </p>
+          </div>
+        </div>
+
+        <div class="portal-banner-actions">
+          <a href="https://notes-computer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-portal">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span>Open Notes Portal ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="methodology">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2><i class="fa-solid fa-route" style="color: var(--sage-accent);"></i> How to Learn & Solve with ScriptFolio</h2>
+          <p>A proven step-by-step workflow designed to transform beginners into confident problem solvers.</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-book-open"></i></div>
+          <h3>1. Review Core Concepts & Notes</h3>
+          <p>
+            Start with clear theory from the integrated Computer Notes portal. Understand logic patterns, operator behaviors,
+            and time complexities before writing a single line of code.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>2. Solve Handcrafted Questions</h3>
+          <p>
+            Pick any topic and read real practical questions. Hit <strong>"Copy Question"</strong> with one click and
+            paste the prompt right into your code editor or IDE to attempt it independently.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+          <h3>3. Check Clean Code Solutions</h3>
+          <p>
+            Compare your implementation directly against verified code solution screenshots placed directly below each question.
+            Click on any solution screenshot to inspect it in high-resolution zoom.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap" id="features">
+      <div class="section-header">
+        <div class="section-header-left">
+          <h2><i class="fa-solid fa-feather-pointed" style="color: var(--sage-accent);"></i> Features Built for Coding Focus</h2>
+          <p>Clean, intentional design that removes distractions and maximizes practice efficiency.</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-copy"></i></div>
+          <h3>One-Click Prompt Copy</h3>
+          <p>
+            Every single question prompt includes a clipboard button. Copy the exact requirement instantly
+            into your IDE or Jupyter notebook without touching your mouse to highlight.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-image"></i></div>
+          <h3>Solution Screenshot Under Every Question</h3>
+          <p>
+            Questions sit cleanly on top, with the author's verified code solution image directly underneath.
+            Click on any image to open it in a full-screen zoomable lightbox.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i class="fa-solid fa-book-bookmark"></i></div>
+          <h3>Side-by-Side Theory & Practice</h3>
+          <p>
+            Toggle effortlessly between programming exercises and comprehensive Computer Notes directly within
+            the integrated ScriptFolio workspace.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="landing-footer" id="about">
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="#top" class="footer-brand" title="Back to top">
+            <div class="footer-logo-box" title="ScriptFolio">
+              <img src="images/icon/logo.png" alt="S" onerror="this.remove()">
+            </div>
+            <span>ScriptFolio</span>
+          </a>
+          <p class="footer-desc">Curated programming practice and computer science notes archive.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="author-pill">
+            <i class="fa-solid fa-user-tie" style="color: var(--sage-accent);"></i>
+            <span>Curated by <strong>Brijesh Singh</strong></span>
+          </div>
+
+          <div class="author-links">
+            <a href="https://github.com/brijeshsingh16" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/bsingh16" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===================== VIEW 2: PRACTICE WORKSPACE ===================== -->
+  <div class="view view-practice" id="practiceView">
+
+    <!-- Mobile-only bar to open the practice drawer -->
+    <div class="ws-mobile-bar">
+      <button type="button" class="ws-toggle-btn" onclick="toggleSidebar(true)" aria-label="Open practice list">
+        <i class="fa-solid fa-bars"></i> Practice
+      </button>
+      <span class="ws-mobile-current" id="mobileCurrentText">Operators</span>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar(false)"></div>
+
+    <div class="workspace">
+
+      <!-- LEFT: practice list -->
+      <aside class="sidebar" id="appSidebar">
+        <div class="sidebar-header">
+          <div class="practice-counter-badge">
+            <span><i class="fa-solid fa-book-bookmark" style="margin-right: 6px; color: var(--sage-accent);"></i>Total Languages</span>
+            <span class="badge-pill" id="totalLanguagesBadge">1 Language</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-content" id="sidebarContent">
+
+          <div
+            class="pinned-portal-card"
+            id="pinnedPortalCard"
+            onclick="loadExternalPortal('Computer Notes', 'notes-computer.vercel.app', 'https://notes-computer.vercel.app/')"
+            title="Click to view Computer Notes here"
+          >
+            <div class="portal-left">
+              <div class="portal-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="portal-meta">
+                <h2>Computer Notes</h2>
+                <p>notes-computer.vercel.app</p>
+              </div>
+            </div>
+            <a
+              href="https://notes-computer.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="portal-link-btn"
+              title="Open website in new tab"
+              onclick="event.stopPropagation()"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="sidebar-divider"><span>Practice Directory</span></div>
+
+          <div id="practiceContainer" class="practice-container"></div>
+        </nav>
+      </aside>
+
+      <!-- RIGHT: iframe -->
+      <main class="main-viewport">
+        <div class="viewport-top-bar">
+          <div class="breadcrumb-trail">
+            <span>Language</span>
+            <i class="fa-solid fa-chevron-right" style="font-size: 9px;"></i>
+            <span class="active-language" id="activeLanguageText">Python</span>
+            <i class="fa-solid fa-chevron-right" style="font-size: 9px;"></i>
+            <span class="active-subtopic" id="activeSubtopicText">Operators</span>
+          </div>
+
+          <div class="page-source-pill">
+            <a href="#" id="openExternalAnchor" target="_blank" class="open-external-btn" title="Open in new window">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Open Page</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="iframe-wrapper">
+          <iframe
+            id="externalPageFrame"
+            name="externalPageFrame"
+            title="Question & Code Solution Content"
+            src="about:blank"
+          ></iframe>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/index/index.js"></script>
+</body>
+</html>
