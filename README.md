@@ -8,7 +8,7 @@
 ![No Build Step](https://img.shields.io/badge/build-none-446852)
 ![Static Site](https://img.shields.io/badge/type-static%20site-32503e)
 
-**Live site:** `https://your-username.github.io/your-repo/` *(replace with your deployed URL)*
+**Live site:** <https://scriptfolio-code.vercel.app/>
 **Computer Notes portal:** <https://notes-computer.vercel.app/>
 
 ---
