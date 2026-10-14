@@ -30,7 +30,6 @@
 10. [Browser Support](#browser-support)
 11. [Troubleshooting](#troubleshooting)
 12. [Author](#author)
-13. [License](#license)
 
 ---
 
