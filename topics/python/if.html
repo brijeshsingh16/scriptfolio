@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3D6C7BB8M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D3D6C7BB8M');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — If Statement</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon" type="image/png" href="../../images/icon/logo.png" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="../../css/pages/pages.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-info">
+      <h1>
+        <i class="fa-brands fa-python" style="color: var(--sage-accent);"></i>
+        <span>Python: If Statement Practice</span>
+      </h1>
+      <p>Questions on top, code solution screenshots directly below. Click any image to expand.</p>
+    </div>
+    <div class="header-badge">
+      <i class="fa-solid fa-list-check"></i>
+      <span id="totalQuestionsCount">0 Questions</span>
+    </div>
+  </header>
+
+  <main class="questions-container">
+
+    <!-- QUESTION 1: check-num-positive-negative-zero-using-if.py -->
+    <article class="qa-card" id="q1">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 1</span>
+            <span class="topic-tag">If Statement</span>
+            <span class="topic-tag">Conditionals</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q1-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check Positive, Negative, or Zero Using Simple If Statements</h2>
+        <p class="question-desc" id="q1-text">Write a Python program to read an integer and determine whether it is positive, negative, or zero using independent simple if statements.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/check-num-positive-negative-zero-using-if.png" alt="Check Positive Negative Zero Using If Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 2: if-alphabet-opposite-case.py -->
+    <article class="qa-card" id="q2">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 2</span>
+            <span class="topic-tag">If Statement</span>
+            <span class="topic-tag">Case Conversion</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q2-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Convert Alphabet to Opposite Case Using If</h2>
+        <p class="question-desc" id="q2-text">Write a Python program to accept a character and convert it to its opposite case (uppercase to lowercase, or lowercase to uppercase) using if conditions.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/if-alphabet-opposite-case.png" alt="Alphabet Opposite Case Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 3: print-absolute-value-using-if.py -->
+    <article class="qa-card" id="q3">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 3</span>
+            <span class="topic-tag">If Statement</span>
+            <span class="topic-tag">Absolute Value</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q3-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Print Absolute Value of a Number Using If</h2>
+        <p class="question-desc" id="q3-text">Write a Python program to compute and display the absolute value of an input integer using a simple if statement.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/print-absolute-value-using-if.png" alt="Print Absolute Value Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed Solution Screenshot" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice">
+    <i class="fa-solid fa-check-circle"></i>
+    <span>Question copied to clipboard!</span>
+  </div>
+
+  <script src="../../js/pages/pages.js"></script>
+</body>
+</html>
