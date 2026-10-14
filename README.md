@@ -329,10 +329,4 @@ Works in current versions of Chrome, Edge, Firefox and Safari, on desktop and mo
 
 ---
 
-## License
-
-Add a license of your choice (for example MIT) and update this section. If you don't include one, all rights are reserved by default.
-
----
-
 <p align="center">Made with care for people learning to code. ⭐ Star the repo if it helps you!</p>
