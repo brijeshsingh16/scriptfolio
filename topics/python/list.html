@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — Lists</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon" type="image/png" href="../../images/icon/logo.png" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="../../css/pages/pages.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-info">
+      <h1>
+        <i class="fa-brands fa-python" style="color: var(--sage-accent);"></i>
+        <span>Python: Lists Practice</span>
+      </h1>
+      <p>Questions on top, code solution screenshots directly below. Click any image to expand.</p>
+    </div>
+    <div class="header-badge">
+      <i class="fa-solid fa-list-check"></i>
+      <span id="totalQuestionsCount">0 Questions</span>
+    </div>
+  </header>
+
+  <main class="questions-container">
+
+    <!-- QUESTION 1: list-check-brics-countries.py -->
+    <article class="qa-card" id="q1">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 1</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Membership</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q1-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if Country Belongs to BRICS List</h2>
+        <p class="question-desc" id="q1-text">Write a Python program to initialize a list containing the names of BRICS countries, accept a country name from the user, and verify whether it is part of BRICS.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-check-brics-countries.png" alt="Check BRICS Countries Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 2: list-count-frequency-in-list.py -->
+    <article class="qa-card" id="q2">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 2</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Frequency</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q2-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Count Frequency of Each Element in a List</h2>
+        <p class="question-desc" id="q2-text">Write a Python program to traverse a list containing duplicate items and display the frequency (occurrence count) of every distinct element.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-count-frequency-in-list.png" alt="Count Frequency in List Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 3: list-count-how-many-number-are-greater-than-user-number.py -->
+    <article class="qa-card" id="q3">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 3</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Comparison Count</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q3-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Count Elements Greater Than a Given User Number</h2>
+        <p class="question-desc" id="q3-text">Write a Python program to take a target number from the user and count how many items in a predefined list of numbers are strictly greater than that number.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-count-how-many-number-are-greater-than-user-number.png" alt="Count Greater Than User Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 4: list-delete-all-duplicate-elements.py -->
+    <article class="qa-card" id="q4">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 4</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Deduplication</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q4-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Delete All Duplicate Elements from a List</h2>
+        <p class="question-desc" id="q4-text">Write a Python program to remove all duplicate elements from a list, preserving only unique values in the order of their first appearance.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-delete-all-duplicate-elements.png" alt="Delete All Duplicate Elements Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 5: list-find-common-in-two-lists.py -->
+    <article class="qa-card" id="q5">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 5</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Intersection</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q5-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Common Elements in Two Lists</h2>
+        <p class="question-desc" id="q5-text">Write a Python program to read or define two separate lists and create a new list containing only the elements common to both.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-find-common-in-two-lists.png" alt="Common in Two Lists Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 6: list-find-elements-not-in-other-list.py -->
+    <article class="qa-card" id="q6">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 6</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Difference</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q6-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Elements Present in One List but Not in Another</h2>
+        <p class="question-desc" id="q6-text">Write a Python program to compare two lists and print elements that are present in the first list but absent from the second list.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-find-elements-not-in-other-list.png" alt="Elements Not in Other List Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 7: list-find-max-min.py -->
+    <article class="qa-card" id="q7">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 7</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Min Max</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q7-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Maximum and Minimum Numbers in a List</h2>
+        <p class="question-desc" id="q7-text">Write a Python program to find and display the maximum and minimum numbers from a given list of numerical values.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-find-max-min.png" alt="Find Max Min Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 8: list-find-prime-number-from-user-list.py -->
+    <article class="qa-card" id="q8">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 8</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Prime Filter</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q8-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find All Prime Numbers in a User-Provided List</h2>
+        <p class="question-desc" id="q8-text">Write a Python program to accept a list of integers from the user, test each number for primality, and extract all prime numbers into a separate list.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-find-prime-number-from-user-list.png" alt="Prime Number from User List Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 9: list-find-successor-and-predecessor-from-user-list.py -->
+    <article class="qa-card" id="q9">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 9</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Successor & Predecessor</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q9-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Predecessor and Successor for List Elements</h2>
+        <p class="question-desc" id="q9-text">Write a Python program to search for a specified element in a list and display its immediate predecessor (previous item) and successor (next item).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-find-successor-and-predecessor-from-user-list.png" alt="Successor and Predecessor Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 10: list-first-10-fibonacci.py -->
+    <article class="qa-card" id="q10">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 10</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Fibonacci</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q10-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Generate and Store First 10 Fibonacci Numbers in a List</h2>
+        <p class="question-desc" id="q10-text">Write a Python program to compute the first 10 terms of the Fibonacci sequence and store them into a list, printing the resulting sequence.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-first-10-fibonacci.png" alt="First 10 Fibonacci Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 11: list-generate-squares-between-1-20.py -->
+    <article class="qa-card" id="q11">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 11</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Math & Squares</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q11-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Generate Squares of Numbers Between 1 and 20</h2>
+        <p class="question-desc" id="q11-text">Write a Python program to generate a list containing squares of all integers from 1 up to 20 using a loop or list comprehension.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-generate-squares-between-1-20.png" alt="Squares Between 1 and 20 Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 12: list-make-3rd-list-contain-sumof-1and2list.py -->
+    <article class="qa-card" id="q12">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 12</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Element-wise Sum</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q12-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Create a 3rd List Containing Element-wise Sum of Two Lists</h2>
+        <p class="question-desc" id="q12-text">Write a Python program taking two equal-length numerical lists, adding corresponding elements at each index position, and storing the resulting sums in a third list.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-make-3rd-list-contain-sumof-1and2list.png" alt="Sum of 1 and 2 List Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 13: list-practice.py -->
+    <article class="qa-card" id="q13">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 13</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Basic Methods</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q13-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Python Lists Core Operations and Practice</h2>
+        <p class="question-desc" id="q13-text">Write a Python script demonstrating foundational list operations: appending, inserting, popping, slicing, and index referencing on heterogeneous elements.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-practice.png" alt="List Practice Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 14: list-print-all-even-numbers-from-user-input.py -->
+    <article class="qa-card" id="q14">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 14</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Even Numbers</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q14-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Print All Even Numbers from User-Input List</h2>
+        <p class="question-desc" id="q14-text">Write a Python program to populate a list of integers from user input, iterate through the list, and display only the even numbers.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-print-all-even-numbers-from-user-input.png" alt="Even Numbers User Input Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 15: list-print-in-ascending-order.py -->
+    <article class="qa-card" id="q15">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 15</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Sorting</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q15-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Sort and Print List in Ascending Order</h2>
+        <p class="question-desc" id="q15-text">Write a Python program to read numerical list items from the user and arrange them in ascending order using list sorting methods or a sorting algorithm.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-print-in-ascending-order.png" alt="Print in Ascending Order Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 16: list-print-word-in-alphabetical-order.py -->
+    <article class="qa-card" id="q16">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 16</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Word Sort</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q16-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Sort and Print Words in Alphabetical Order</h2>
+        <p class="question-desc" id="q16-text">Write a Python program to accept a series of string words into a list and print them sorted in alphabetical (lexicographical) order.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-print-word-in-alphabetical-order.png" alt="Word in Alphabetical Order Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 17: list-replace-all-negative-numbers.py -->
+    <article class="qa-card" id="q17">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 17</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Transformation</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q17-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Replace All Negative Numbers in a List</h2>
+        <p class="question-desc" id="q17-text">Write a Python program to traverse a numerical list and replace every negative number with zero (or its positive absolute equivalent), updating the original list.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-replace-all-negative-numbers.png" alt="Replace Negative Numbers Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 18: list-separate-positive-and-negative.py -->
+    <article class="qa-card" id="q18">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 18</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Partitioning</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q18-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Separate Positive and Negative Numbers into Two Lists</h2>
+        <p class="question-desc" id="q18-text">Write a Python program to take a mixed list of positive and negative integers and partition them into two separate lists: one for positive values and another for negative values.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-separate-positive-and-negative.png" alt="Separate Positive and Negative Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 19: list-shift-all-elements-next-positionlast-element-to-first.py -->
+    <article class="qa-card" id="q19">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 19</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Rotation</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q19-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Right Rotate List: Shift Elements and Last to First</h2>
+        <p class="question-desc" id="q19-text">Write a Python program to circularly shift all elements of a list one position to the right, moving the last element to the first index position.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-shift-all-elements-next-positionlast-element-to-first.png" alt="Shift Elements Last to First Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 20: list-sum-even-odd-separately.py -->
+    <article class="qa-card" id="q20">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 20</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Sum Even Odd</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q20-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Sum Even and Odd Elements Separately in a List</h2>
+        <p class="question-desc" id="q20-text">Write a Python program to calculate and display the total sum of all even numbers and the total sum of all odd numbers in a list separately.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-sum-even-odd-separately.png" alt="Sum Even Odd Separately Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 21: list-unique-list-from-user-input.py -->
+    <article class="qa-card" id="q21">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 21</span>
+            <span class="topic-tag">Lists</span>
+            <span class="topic-tag">Unique Filter</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q21-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Build a Unique Elements List from User Input</h2>
+        <p class="question-desc" id="q21-text">Write a Python program that accepts a series of inputs from the user and constructs a new list containing only unique items, ignoring duplicates as they are entered.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/list-unique-list-from-user-input.png" alt="Unique List from User Input Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox Modal for Fullscreen Image View -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed Solution Screenshot" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice">
+    <i class="fa-solid fa-check-circle"></i>
+    <span>Question copied to clipboard!</span>
+  </div>
+
+  <script src="../../js/pages/pages.js"></script>
+</body>
+</html>

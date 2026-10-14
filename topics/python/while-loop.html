@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — While Loop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon" type="image/png" href="../../images/icon/logo.png" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="../../css/pages/pages.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-info">
+      <h1>
+        <i class="fa-brands fa-python" style="color: var(--sage-accent);"></i>
+        <span>Python: While Loop Practice</span>
+      </h1>
+      <p>Questions on top, code solution screenshots directly below. Click any image to expand.</p>
+    </div>
+    <div class="header-badge">
+      <i class="fa-solid fa-list-check"></i>
+      <span id="totalQuestionsCount">0 Questions</span>
+    </div>
+  </header>
+
+  <main class="questions-container">
+
+    <!-- QUESTION 1: while-loop-check-armstrong-or-not.py -->
+    <article class="qa-card" id="q1">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 1</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Armstrong Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q1-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if a Number is Armstrong or Not</h2>
+        <p class="question-desc" id="q1-text">Write a Python program using a while loop to check whether a given integer is an Armstrong number (where the sum of each digit raised to the power of total digits equals the number itself).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-check-armstrong-or-not.png" alt="Armstrong Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 2: while-loop-check-palindrome-num-or-not.py -->
+    <article class="qa-card" id="q2">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 2</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Palindrome</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q2-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if a Number is a Palindrome Number</h2>
+        <p class="question-desc" id="q2-text">Write a Python program using a while loop to reverse the digits of an integer and determine whether it is a palindrome (reads identically forwards and backwards).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-check-palindrome-num-or-not.png" alt="Palindrome Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 3: while-loop-check-perfect-number.py -->
+    <article class="qa-card" id="q3">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 3</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Perfect Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q3-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if a Number is a Perfect Number</h2>
+        <p class="question-desc" id="q3-text">Write a Python program using a while loop to find all proper divisors of a number and check whether their sum equals the number itself (e.g., 6, 28).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-check-perfect-number.png" alt="Perfect Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 4: while-loop-check-prime-number.py -->
+    <article class="qa-card" id="q4">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 4</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Prime Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q4-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if a Number is a Prime Number</h2>
+        <p class="question-desc" id="q4-text">Write a Python program using a while loop to check whether a given integer is a prime number (has no divisors other than 1 and itself).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-check-prime-number.png" alt="Prime Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 5: while-loop-count-even-odd-digit-separately.py -->
+    <article class="qa-card" id="q5">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 5</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Even Odd Count</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q5-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Count Even and Odd Digits in a Number Separately</h2>
+        <p class="question-desc" id="q5-text">Write a Python program using a while loop to extract digits from a number and count how many even digits and odd digits are present.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-count-even-odd-digit-separately.png" alt="Count Even Odd Digit Separately Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 6: while-loop-count-the-digit.py -->
+    <article class="qa-card" id="q6">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 6</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Digit Count</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q6-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Count Total Digits in a Number</h2>
+        <p class="question-desc" id="q6-text">Write a Python program using a while loop and floor division (// 10) to count the total number of digits in an input integer.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-count-the-digit.png" alt="Count the Digit Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 7: while-loop-find-gcd-greatestCommonDivisor.py -->
+    <article class="qa-card" id="q7">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 7</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">GCD</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q7-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find GCD (Greatest Common Divisor) of Two Numbers</h2>
+        <p class="question-desc" id="q7-text">Write a Python program using Euclidean algorithm in a while loop to calculate the Greatest Common Divisor GCD of two numbers.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-find-gcd-greatestCommonDivisor.png" alt="Find GCD Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 8: while-loop-find-largest-smallest-digit.py -->
+    <article class="qa-card" id="q8">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 8</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Digit Extremes</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q8-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Largest and Smallest Digit in a Number</h2>
+        <p class="question-desc" id="q8-text">Write a Python program using a while loop to examine each digit of an integer and display both the largest and smallest digit found.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-find-largest-smallest-digit.png" alt="Find Largest Smallest Digit Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 9: while-loop-find-mn-without-math.py -->
+    <article class="qa-card" id="q9">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 9</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Power / Exponent</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q9-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Calculate m^n (m to the power of n) Without Math Module</h2>
+        <p class="question-desc" id="q9-text">Write a Python program to compute m raised to the power n using repeated multiplication inside a while loop without using math.pow or the ** operator.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-find-mn-without-math.png" alt="Find m^n Without Math Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 10: while-loop-positive-negative-odd-number-sum-from-user-input.py -->
+    <article class="qa-card" id="q10">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 10</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Sentinel Accumulator</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q10-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Sum Positive, Negative, and Odd Numbers from User</h2>
+        <p class="question-desc" id="q10-text">Write a Python program to continuously accept numbers from the user in a while loop until a sentinel value is entered, calculating separate sums for positive, negative, and odd numbers.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-positive-negative-odd-number-sum-from-user-input.png" alt="Positive Negative Odd Sum Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 11: while-loop-print-digit-new-line.py -->
+    <article class="qa-card" id="q11">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 11</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Digit Printing</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q11-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Print Each Digit of a Number on a New Line</h2>
+        <p class="question-desc" id="q11-text">Write a Python program using a while loop to extract and print each individual digit of an input integer on a separate line.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-print-digit-new-line.png" alt="Print Digit New Line Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 12: while-loop-print-factorial.py -->
+    <article class="qa-card" id="q12">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 12</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Factorial</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q12-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Calculate Factorial of a Number Using While Loop</h2>
+        <p class="question-desc" id="q12-text">Write a Python program to read an integer and compute its factorial using a while loop.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-print-factorial.png" alt="Print Factorial Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 13: while-loop-print-first-n-buzz-number.py -->
+    <article class="qa-card" id="q13">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 13</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Buzz Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q13-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Print First N Buzz Numbers</h2>
+        <p class="question-desc" id="q13-text">Write a Python program to print the first N buzz numbers (numbers divisible by 7 or ending in 7) using a while loop.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-print-first-n-buzz-number.png" alt="First N Buzz Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 14: while-loop-print-prime-factor.py -->
+    <article class="qa-card" id="q14">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 14</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Prime Factorization</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q14-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find and Print Prime Factors of a Number</h2>
+        <p class="question-desc" id="q14-text">Write a Python program using a while loop to find and display all prime factors of a given number.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-print-prime-factor.png" alt="Print Prime Factor Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 15: while-loop-reverse-num.py -->
+    <article class="qa-card" id="q15">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 15</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Reverse Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q15-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Reverse a Number Using While Loop</h2>
+        <p class="question-desc" id="q15-text">Write a Python program to reverse any given integer numerically using modulo and division inside a while loop.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-reverse-num.png" alt="Reverse Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 16: while-loop-spy-num-check.py -->
+    <article class="qa-card" id="q16">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 16</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Spy Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q16-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Check if a Number is a Spy Number</h2>
+        <p class="question-desc" id="q16-text">Write a Python program using a while loop to determine if a number is a Spy Number (where the sum of all digits equals the product of all digits, e.g., 1124).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-spy-num-check.png" alt="Spy Number Check Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 17: while-loop-sum-of-digit.py -->
+    <article class="qa-card" id="q17">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 17</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Sum of Digits</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q17-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Calculate Sum of Digits of a Number</h2>
+        <p class="question-desc" id="q17-text">Write a Python program using a while loop to extract each digit of an integer and compute their total sum.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-sum-of-digit.png" alt="Sum of Digit Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 18: while-loop-sum-of-even-odd-digit-separately.py -->
+    <article class="qa-card" id="q18">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 18</span>
+            <span class="topic-tag">While Loop</span>
+            <span class="topic-tag">Sum Even Odd Digits</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q18-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Sum Even and Odd Digits of a Number Separately</h2>
+        <p class="question-desc" id="q18-text">Write a Python program using a while loop to extract all digits of an input number and calculate the sum of even digits and the sum of odd digits separately.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/while-loop-sum-of-even-odd-digit-separately.png" alt="Sum of Even Odd Digit Separately Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox Modal for Fullscreen Image View -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed Solution Screenshot" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice">
+    <i class="fa-solid fa-check-circle"></i>
+    <span>Question copied to clipboard!</span>
+  </div>
+
+  <script src="../../js/pages/pages.js"></script>
+</body>
+</html>

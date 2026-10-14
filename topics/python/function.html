@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — Functions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon" type="image/png" href="../../images/icon/logo.png" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="../../css/pages/pages.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-info">
+      <h1>
+        <i class="fa-brands fa-python" style="color: var(--sage-accent);"></i>
+        <span>Python: Functions Practice</span>
+      </h1>
+      <p>Questions on top, code solution screenshots directly below. Click any image to expand.</p>
+    </div>
+    <div class="header-badge">
+      <i class="fa-solid fa-list-check"></i>
+      <span id="totalQuestionsCount">0 Questions</span>
+    </div>
+  </header>
+
+  <main class="questions-container">
+
+    <!-- QUESTION 1: function-area-of-circle.py -->
+    <article class="qa-card" id="q1">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 1</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Geometry</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q1-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Calculate the Area of a Circle</h2>
+        <p class="question-desc" id="q1-text">Write a Python function `area_of_circle(radius)` that takes radius as an argument and returns the area of the circle.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-area-of-circle.png" alt="Function Area of Circle Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 2: function-def-add-two-num.py -->
+    <article class="qa-card" id="q2">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 2</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Basics</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q2-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Add Two Numbers</h2>
+        <p class="question-desc" id="q2-text">Write a Python function `add_numbers(a, b)` that takes two parameters, adds them together, and returns the result.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-add-two-num.png" alt="Function Add Two Numbers Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 3: function-def-buzz-num.py -->
+    <article class="qa-card" id="q3">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 3</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Buzz Number</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q3-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Check if a Number is a Buzz Number</h2>
+        <p class="question-desc" id="q3-text">Write a Python function `is_buzz_number(n)` that returns True if a number is divisible by 7 or ends in 7, and False otherwise.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-buzz-num.png" alt="Function Buzz Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 4: function-def-isprime.py -->
+    <article class="qa-card" id="q4">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 4</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Prime Check</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q4-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Check for Prime Number</h2>
+        <p class="question-desc" id="q4-text">Write a Python function `is_prime(n)` that tests whether an integer is prime and returns a boolean value.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-isprime.png" alt="Function Is Prime Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 5: function-def-palindromic-prime.py -->
+    <article class="qa-card" id="q5">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 5</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Palindromic Prime</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q5-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Check Palindromic Prime Number</h2>
+        <p class="question-desc" id="q5-text">Write a Python function to check whether an integer is a Palindromic Prime (a number that is both a prime and reads the same backwards, e.g., 131).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-palindromic-prime.png" alt="Function Palindromic Prime Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 6: function-def-print-even-num-from-list.py -->
+    <article class="qa-card" id="q6">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 6</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">List Processing</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q6-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Extract and Print Even Numbers from a List</h2>
+        <p class="question-desc" id="q6-text">Write a Python function `print_even_numbers(lst)` that accepts a list of integers and prints all even elements.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-print-even-num-from-list.png" alt="Function Print Even from List Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 7: function-def-print-twin-prime-num.py -->
+    <article class="qa-card" id="q7">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 7</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Twin Primes</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q7-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Identify and Print Twin Prime Pairs</h2>
+        <p class="question-desc" id="q7-text">Write a Python function to find and display all Twin Prime pairs (pairs of primes having a difference of 2, like 3 & 5, 11 & 13) within a given range.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-print-twin-prime-num.png" alt="Function Twin Prime Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 8: function-def-sum-even-odd-separate.py -->
+    <article class="qa-card" id="q8">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 8</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Even/Odd Sum</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q8-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Sum Even and Odd Numbers Separately</h2>
+        <p class="question-desc" id="q8-text">Write a Python function that takes a sequence of integers and returns two distinct values: the sum of even numbers and the sum of odd numbers.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-def-sum-even-odd-separate.png" alt="Function Sum Even Odd Separate Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 9: function-math-module.py -->
+    <article class="qa-card" id="q9">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 9</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Math Module</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q9-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Demonstration of Built-in Math Module Functions</h2>
+        <p class="question-desc" id="q9-text">Write a Python program utilizing standard mathematical functions from the `math` module (such as sqrt, pow, ceil, floor, and fabs).</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-math-module.png" alt="Function Math Module Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 10: function-palindrome-num.py -->
+    <article class="qa-card" id="q10">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 10</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Palindrome</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q10-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Function to Check Palindrome Number</h2>
+        <p class="question-desc" id="q10-text">Write a Python function `is_palindrome(num)` to test whether an integer reads the same forwards and backwards.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-palindrome-num.png" alt="Function Palindrome Number Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 11: function-start-note.py -->
+    <article class="qa-card" id="q11">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 11</span>
+            <span class="topic-tag">Functions</span>
+            <span class="topic-tag">Fundamentals</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q11-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Introduction to Defining and Calling Functions</h2>
+        <p class="question-desc" id="q11-text">Write a foundational Python script demonstrating function definition syntax (`def`), parameters, return statements, and calling conventions.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/function-start-note.png" alt="Function Fundamentals Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed Solution Screenshot" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice">
+    <i class="fa-solid fa-check-circle"></i>
+    <span>Question copied to clipboard!</span>
+  </div>
+
+  <script src="../../js/pages/pages.js"></script>
+</body>
+</html>

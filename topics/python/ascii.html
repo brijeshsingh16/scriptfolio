@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python — ASCII</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link rel="icon" type="image/png" href="../../images/icon/logo.png" />
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="../../css/pages/pages.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-info">
+      <h1>
+        <i class="fa-brands fa-python" style="color: var(--sage-accent);"></i>
+        <span>Python: ASCII Practice</span>
+      </h1>
+      <p>Questions on top, code solution screenshots directly below. Click any image to expand.</p>
+    </div>
+    <div class="header-badge">
+      <i class="fa-solid fa-list-check"></i>
+      <span id="totalQuestionsCount">0 Questions</span>
+    </div>
+  </header>
+
+  <main class="questions-container">
+
+    <!-- QUESTION 1: convert-lower-to-uppercase.py -->
+    <article class="qa-card" id="q1">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 1</span>
+            <span class="topic-tag">ASCII</span>
+            <span class="topic-tag">Case Conversion</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q1-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Convert Lowercase Character to Uppercase Using ASCII Value</h2>
+        <p class="question-desc" id="q1-text">Write a Python program to take a lowercase character from the user and convert it to uppercase by manipulating its ASCII value (subtracting 32 from ord(char)) without using the built-in upper() method.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/convert-lower-to-uppercase.png" alt="Convert Lower to Uppercase Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 2: find-ascii-from-num.py -->
+    <article class="qa-card" id="q2">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 2</span>
+            <span class="topic-tag">ASCII</span>
+            <span class="topic-tag">chr() Function</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q2-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Find Character Corresponding to an ASCII Code Number</h2>
+        <p class="question-desc" id="q2-text">Write a Python program to read an integer ASCII code value from the user (such as 65 to 90 or 97 to 122) and display its corresponding character using the chr() function.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/find-ascii-from-num.png" alt="Find ASCII from Num Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 3: lower-to-uppercase-ASCII.py -->
+    <article class="qa-card" id="q3">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 3</span>
+            <span class="topic-tag">ASCII</span>
+            <span class="topic-tag">Character Mapping</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q3-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Convert Lowercase to Uppercase via ASCII Value.</h2>
+        <p class="question-desc" id="q3-text">Write a Python program that accepts a single lowercase alphabet character from the user. Using Python's built-in ord() function, determine its ASCII value, subtract 32 to obtain the corresponding uppercase ASCII code, and convert it back to a character using the chr() function. Display both intermediate ASCII values and the converted uppercase character.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/lower-to-uppercase-ASCII.png" alt="Lower to Uppercase ASCII Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESTION 4: print-ascii-value.py -->
+    <article class="qa-card" id="q4">
+      <div class="question-section">
+        <div class="question-meta-bar">
+          <div class="question-pill-group">
+            <span class="question-num">Question 4</span>
+            <span class="topic-tag">ASCII</span>
+            <span class="topic-tag">ord() Function</span>
+          </div>
+          <button class="copy-btn" onclick="copyQuestion('q4-text', this)" title="Copy question prompt">
+            <i class="fa-regular fa-copy"></i>
+            <span>Copy Question</span>
+          </button>
+        </div>
+        <h2 class="question-heading">Print ASCII Value of a Given Character</h2>
+        <p class="question-desc" id="q4-text">Write a Python program to take a character input from the user and print its corresponding numeric ASCII value using the built-in ord() function.</p>
+      </div>
+      <div class="solution-section">
+        <div class="solution-header">
+          <span class="solution-title"><i class="fa-solid fa-code"></i> Solution Code Screenshot</span>
+          <span class="image-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click image to zoom</span>
+        </div>
+        <div class="image-container" onclick="openLightbox(this)">
+          <img src="../../images/code-screenshot/print-ascii-value.png" alt="Print ASCII Value Solution" class="solution-image">
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Lightbox Modal for Fullscreen Image View -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed Solution Screenshot" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice">
+    <i class="fa-solid fa-check-circle"></i>
+    <span>Question copied to clipboard!</span>
+  </div>
+
+  <script src="../../js/pages/pages.js"></script>
+</body>
+</html>
