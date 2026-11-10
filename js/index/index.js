@@ -41,7 +41,7 @@ const TOPICS_CONFIG = [
 		{ name: 'Lists', file: 'topics/html/lists.html' },
 		{ name: 'Tables', file: 'topics/html/tables.html' },
 		{ name: 'Forms', file: 'topics/html/forms.html' },
-		{ name: 'Framest', file: 'topics/html/frameset.html'},
+		{ name: 'Frameset', file: 'topics/html/frameset.html'},
 		{ name: 'Iframes', file: 'topics/html/iframes.html' },
 		{ name: 'Final Project', file: 'topics/html/final-project.html' }
 	  ]
